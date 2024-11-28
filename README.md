@@ -1,20 +1,18 @@
 Portal Check Notícias
-Este é um portal de notícias dinâmico que exibe uma coleção de artigos categorizados, incluindo as áreas de Tecnologia, Entretenimento, Esportes, Política, Economia, e Cultura. O portal permite que o usuário navegue pelas categorias e explore as notícias por meio de uma interface interativa e moderna. O layout é responsivo, garantindo boa visualização em dispositivos móveis e desktops.
+Um portal de notícias dinâmico que exibe artigos categorizados. O projeto oferece uma interface moderna com navegação por categorias como Tecnologia, Entretenimento, Esportes, Política, Economia e Cultura. O layout é responsivo, garantindo boa visualização em dispositivos móveis e desktops.
 
 Tecnologias Utilizadas
-React.js: Biblioteca para construção da interface de usuário.
+React.js: Para construção da interface de usuário.
 JavaScript (ES6+): Linguagem de programação principal.
-CSS Flexbox & Grid: Estilização responsiva e layout da página.
+CSS Flexbox & Grid: Para estilização e layout responsivo.
 ReactDOM: Para renderizar componentes React no DOM.
 Funcionalidades
-Categorias de Notícias: O portal é dividido em categorias, como Política, Economia, Esportes, Cultura e Tecnologia.
-Filtro de Notícias: A navegação entre as notícias é feita por categoria, e o usuário pode ver as notícias mais recentes ao rolar a página.
-Interatividade: Ao clicar em uma notícia, o usuário é redirecionado para uma página com o conteúdo completo.
-Animações e Transições: Utiliza animações suaves para transições de cliques nas imagens e navegação.
+Categorias de Notícias: O portal é dividido em várias categorias (ex: Política, Economia, etc.).
+Filtro de Notícias: Navegação por categoria para acessar notícias filtradas.
+Interatividade: Clique nas notícias para ler conteúdo completo.
+Animações e Transições: Animações suaves ao interagir com as imagens e links.
 Estrutura do Projeto
-A estrutura do projeto está organizada da seguinte forma:
-
-bash
+arduino
 Copiar código
 /Jornalismocheck
   /image
@@ -29,10 +27,12 @@ Copiar código
   └── notica-styles.css
   └── styles.css
 Arquivos principais:
-PortalNoticias.js: Componente principal do portal que exibe a lista de notícias filtradas por categoria.
-App.js: Configuração principal do projeto React.
-index.js: Ponto de entrada da aplicação.
-styles.css: Arquivo que contém toda a estilização da página, com layout responsivo e animações.
+App.js: Componente principal, configura o React.
+index.html: Estrutura HTML inicial.
+noticia.html: Página de visualização detalhada das notícias.
+styles.css: Arquivo CSS principal para o layout da página.
+Como Rodar o Projeto
+Clone o repositório:
 
 
 Autor
