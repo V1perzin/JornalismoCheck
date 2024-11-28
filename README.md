@@ -36,8 +36,8 @@ styles.css: Arquivo que contém toda a estilização da página, com layout resp
 
 
 Autor
-José Miguel
-José Luiz
+Miguel Neto
+Luiz
 
 
 
