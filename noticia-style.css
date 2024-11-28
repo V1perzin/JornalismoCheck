@@ -1,0 +1,114 @@
+/* Estilo geral */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  header h1 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout da notícia */
+  .news-content {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Garante que o layout seja flexível em telas menores */
+  }
+  
+  /* Artigo principal da notícia */
+  .news-article {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px; /* Margem para garantir que o conteúdo não fique colado nas bordas */
+  }
+  
+  /* Título da notícia */
+  .news-article h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+  }
+  
+  /* Imagem da notícia */
+  .news-image {
+    width: 100%;
+    height: auto; /* Remove a altura fixa, ajustando a altura da imagem conforme o conteúdo */
+    max-height: 400px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Texto do conteúdo */
+  .news-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #444;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    /* Ajuste do layout para dispositivos menores */
+    .news-article {
+      width: 90%; /* Aumenta o tamanho da notícia principal */
+    }
+  
+    .news-content {
+      font-size: 16px; /* Diminui o tamanho da fonte em telas pequenas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajuste para telas muito pequenas (celulares) */
+    .news-article {
+      width: 100%; /* A notícia principal ocupa toda a tela */
+    }
+  
+    .news-image {
+      max-height: 300px; /* Diminui o tamanho máximo das imagens em telas muito pequenas */
+    }
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícia Detalhada</title>
+  <link rel="stylesheet" href="noticia-style.css">
+</head>
+<body>
+  <div class="news-details-container">
+    <header>
+      <h1><a href="index.html">Portal Check Notícias</a></h1>
+    </header>
+
+    <main class="news-content">
+      <article class="news-article" id="news-details"></article>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Portal Check Notícias</p>
+    </footer>
+  </div>
+
+  <script>
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        title: params.get("title"),
+        content: params.get("content"),
+        image: params.get("image"),
+      };
+    }
+
+    const newsDetails = getQueryParams();
+    const newsContainer = document.getElementById("news-details");
+
+    newsContainer.innerHTML = `
+      <h2>${newsDetails.title}</h2>
+      <img src="${newsDetails.image}" alt="${newsDetails.title}" class="news-image" />
+      <p class="news-content">${newsDetails.content}</p>
+    `;
+  </script>
+</body>
+</html>
